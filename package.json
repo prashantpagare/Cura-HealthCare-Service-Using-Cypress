@@ -1,0 +1,33 @@
+{
+  "name": "cura-healthcare-service-using-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key a56871de-6922-429d-9329-80c3b4320f96"
+  },
+  "author": "Prashant Pagare",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "cypress": "^13.6.4",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.1",
+    "mocha": "^10.3.0",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucmberReports/results.json"
+    },
+    "nonGlobalStepDefinations": true,
+    "stepDefinitions": "cypress/e2e/BDD/"
+  }
+}

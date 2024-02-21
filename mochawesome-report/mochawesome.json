@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-21T13:37:13.588Z",
+    "end": "2024-02-21T13:37:24.480Z",
+    "duration": 10892,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c2748471-2faf-4848-8274-d92e7c340ef1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\BDD\\LoginAndMakeAppointment.feature",
+      "file": "cypress\\e2e\\BDD\\LoginAndMakeAppointment.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f560b15d-33e0-4429-aec8-1ba2afe5d605",
+          "title": "End to End Cura HealthCare Application Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login and make appointment",
+              "fullTitle": "End to End Cura HealthCare Application Functionality Login and make appointment",
+              "timedOut": null,
+              "duration": 2849,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: The user sees a confirmation message stating \"Appointment Booked\".",
+                "estack": "Error: Step implementation missing for: The user sees a confirmation message stating \"Appointment Booked\".\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:199:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "6c0eba23-a50d-4851-89c0-ff64162e33ef",
+              "parentUUID": "f560b15d-33e0-4429-aec8-1ba2afe5d605",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6c0eba23-a50d-4851-89c0-ff64162e33ef"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2849,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
